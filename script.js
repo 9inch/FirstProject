@@ -16,9 +16,6 @@ let people = [{
 },{
     num: +420666,
     popis: "Něco nabízel, moc mu nebylo rozumnět, má ruský přízvuk"
-},{
-    num: +49666,
-    popis: "Kretén"
 }]
 
 
