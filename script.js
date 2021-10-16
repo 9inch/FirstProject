@@ -92,8 +92,10 @@ let button = document.querySelector("#button")
 let form = document.querySelector("#formular")
 let inputCislo = document.querySelector("#inputCislo")
 button.addEventListener("click",function(){
-    console.log("bligum")
+    form.style.display = "block"
+    inputCislo.value = input
 })
+
 })
 
 
