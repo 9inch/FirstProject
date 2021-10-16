@@ -42,10 +42,9 @@ document.querySelector("h1").addEventListener("click",function(){
     let option = select.options[select.selectedIndex];
     let arr1 = []
     let arr2 = []
+    document.querySelector("#button").style.display = "none"
 
-
- 
-
+    if(input.length >= 1){
     if(isNaN(input)){
         document.querySelector("#vypsatCislo").textContent = "Tato aplikace je udělána pouze na desítkovou soustavu. Pokud nevíš co to je, odkazuji na zajímavé video na youtube z kanálu Vědecké kladivo, je to zajímavá problematika. https://www.youtube.com/watch?v=dQw4w9WgXcQ"
      }else{
@@ -62,7 +61,8 @@ document.querySelector("h1").addEventListener("click",function(){
             if(arr1.length > 1 ){
                 document.querySelector("#vypsatCislo").textContent = "O čísle " + arr1[0] + " se u nás píše: " + arr1[1]
             }else{
-                document.querySelector("#vypsatCislo").textContent = "O čísle " + option.value + input + " se u nás  nic nepíše. Chcete toto číslo přidat k nám na stránku?" 
+                document.querySelector("#vypsatCislo").textContent = "O čísle " + option.value + input + " se u nás  nic nepíše." 
+                document.querySelector("#button").style.display = "block"
             }
         }else{
             document.querySelector("select").style.display = "none"
@@ -77,13 +77,20 @@ document.querySelector("h1").addEventListener("click",function(){
             if(arr1.length > 1 ){
                 document.querySelector("#vypsatCislo").textContent = "O čísle " + arr1[0] + " se u nás píše: " + arr1[1]
             }else{
-                document.querySelector("#vypsatCislo").textContent = "O čísle " + input + " se u nás  nic nepíše. Chcete toto číslo přidat k nám na stránku?" 
+                document.querySelector("#vypsatCislo").textContent = "O čísle " + input + " se u nás  nic nepíše."
+                document.querySelector("#button").style.display = "block"
             }
 
             
         }
     }
+}else{
+    document.querySelector("#vypsatCislo").textContent = "Abys mohl hledat v naší databázi, je potřeba něco napsat :D"
+}
 })
 
-
-console.log("bliga")
+let button = document.querySelector("#button")
+button.addEventListener("click",function(){
+    console.log("bligum")
+})
+            
