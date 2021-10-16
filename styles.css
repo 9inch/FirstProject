@@ -45,3 +45,17 @@ main #telCislo{
     border: 5px solid black;
     display: none;
 }
+#formular{
+    margin-top: 20px;
+    display: none;
+}
+#inputCislo{
+    
+}
+#inputCislo::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    
+}
+#inputPopis{
+    margin-top: 20px;
+}

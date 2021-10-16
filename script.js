@@ -87,10 +87,14 @@ document.querySelector("h1").addEventListener("click",function(){
 }else{
     document.querySelector("#vypsatCislo").textContent = "Abys mohl hledat v naší databázi, je potřeba něco napsat :D"
 }
-})
 
 let button = document.querySelector("#button")
+let form = document.querySelector("#formular")
+let inputCislo = document.querySelector("#inputCislo")
 button.addEventListener("click",function(){
     console.log("bligum")
 })
+})
+
+
             
