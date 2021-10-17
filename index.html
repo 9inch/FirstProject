@@ -13,7 +13,7 @@
     </div>
     <main>
     <form>
-        <select>
+        <select id="prvniVyber">
             <option value="+420">+420</option>
             <option value="+421">+421</option>
             <option value="+49">+49</option>
@@ -34,10 +34,11 @@
     <div id="button">Přidat toto číslo na stránku</div>
     
     <form id="formular">
-        <label>Zadejte číslo</label>
+        <p>Zadejte číslo<label id="předvolba"></label></p>
         <input id="inputCislo" value="666" type="number"><br>
         <label>Popis k číslu</label>
-        <input id="inputPopis" type="textarea">
+        <input id="inputPopis" type="textarea"><br>
+        <input id="submit" type="submit">
     </form>
 
     </main>

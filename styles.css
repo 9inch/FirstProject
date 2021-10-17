@@ -14,7 +14,7 @@
 main form{
     text-align: center;
 }
-main select{
+main #prvniVyber{
     font-size: 42px;
 }
 main #telCislo{
@@ -48,14 +48,37 @@ main #telCislo{
 #formular{
     margin-top: 20px;
     display: none;
+    font-size: 20px;
 }
 #inputCislo{
-    
+    margin-bottom: 20px;
+}
+#inputPopis{
+    margin-bottom: 20px;
 }
 #inputCislo::-webkit-inner-spin-button {
     -webkit-appearance: none;
     
 }
-#inputPopis{
-    margin-top: 20px;
+#submit{
+    width: 270px;
+    height: 50px;
+    background-color: #496732;
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+#formular select{
+    font-size: 20px;
+}
+#formular option{
+    font-size: 20px;
+}
+#formular input{
+    font-size: 20px;
+}
+#formular p{
+    display: inline;
 }

@@ -43,7 +43,7 @@ document.querySelector("h1").addEventListener("click",function(){
     let arr1 = []
     let arr2 = []
     document.querySelector("#button").style.display = "none"
-
+    
     if(input.length >= 1){
     if(isNaN(input)){
         document.querySelector("#vypsatCislo").textContent = "Tato aplikace je udělána pouze na desítkovou soustavu. Pokud nevíš co to je, odkazuji na zajímavé video na youtube z kanálu Vědecké kladivo, je to zajímavá problematika. https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -91,9 +91,15 @@ document.querySelector("h1").addEventListener("click",function(){
 let button = document.querySelector("#button")
 let form = document.querySelector("#formular")
 let inputCislo = document.querySelector("#inputCislo")
+let labelPredvolba = document.querySelector("#předvolba")
 button.addEventListener("click",function(){
     form.style.display = "block"
-    inputCislo.value = input
+    
+    if(check.checked == true){
+        labelPredvolba.textContent = " " + option.value
+    }else{
+        inputCislo.value = input
+    }
 })
 
 })
